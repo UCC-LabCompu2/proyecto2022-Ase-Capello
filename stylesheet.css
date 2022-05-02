@@ -1,18 +1,18 @@
 @media (max-width: 353px){
     header {
-        padding-bottom: 9rem;
+        padding-bottom: 7.5rem;
     }
 }
 
 @media (min-width:354px) and (max-width: 419px){
     header {
-        padding-bottom: 7rem;
+        padding-bottom: 5.5rem;
     }
 }
 
 @media (min-width:420px) {
     header{
-        padding-bottom: 5rem;
+        padding-bottom: 3.5rem;
     }
 
 }
