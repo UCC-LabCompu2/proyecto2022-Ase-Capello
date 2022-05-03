@@ -1,18 +1,34 @@
+<p align="center">
+ <img width="300px" src="https://3.bp.blogspot.com/-RAdfA9Kbe60/V2DUVbP0SBI/AAAAAAAABH4/rIehNubcD7MPREm10GvLyLR2CoIKFl-HQCLcB/s400/angrybirds2.png" align="center" alt="GitHub Readme Stats" />
+ <h2 align="center">Tiro Parabólico</h2>
+ <p align="center">Get dynamically generated GitHub stats on your READMEs!</p>
+</p>
+
+[![Mateo GitHub stats](https://github-readme-stats.vercel.app/api?username=MateoAse)]
+[![Angelo GitHub stats](https://github-readme-stats.vercel.app/api?username=angcapello)]
+
 # Tiro Parabólico
+
 Se diseñó esta página web para aquellos usuarios que deseen realizar un tiro parabólico
 [Link a la Página](https://ucc-labcompu2.github.io/proyecto2022-Ase-Capello/)
 
 ## Funcionamiento
-En la página se ingresa los valores, luego se calcula y nos brinda los valores de las incógnitas con su gráfica. Si se desea consultar Teoría o Ejemplos seleccionamos el botón correspondiente.
+
+En la página se ingresa los valores, luego se calcula y nos brinda los valores de las incógnitas con su gráfica. Si se
+desea consultar Teoría o Ejemplos seleccionamos el botón correspondiente.
 
 ## Construido con
+
 WebStorm: IDE by JetBrains.
 
 ## Tecnologías usadas
+
 HTML, CSS, JavaScript, Bootstrap, Git, Github y otras.
 
 ## Control de Versiones
-Se usó Git para control de versiones y subido a la nube en el servicio GitHub. Para ver los cambios, revisar los commits.
+
+Se usó Git para control de versiones y subido a la nube en el servicio GitHub. Para ver los cambios, revisar los
+commits.
 
 **Sugerencias a mejorar:**
 Las sugerencias o ideas para mejorar el programa son siempre bienvenidas, si a usted le interesa aportar al proyecto con una idea o sugerencia, mandar email a ang_capello@outlook.com
@@ -78,8 +94,6 @@ Estructura de Proyecto Lab de Computación II - 2022
 * Se corregirá el proyecto con el último commit realizado en Github hasta las 23:59 del día anterior a la fecha de entrega
 * Las notas serán de manera logarítmica: (Por ejemplo 60% 4; 70% 5,5; 80% 7; 90% 8,5)
 
-
-
 ## Requisitos del Segundo Parcial
 
 ### Sobre el proyecto general
@@ -103,13 +117,12 @@ Se debe agregar funcionalidad Js a la página HTML+CSS desarrollada
      * @return Valor que retorna
      */
    ```
-   
+
 ### Sobre las correcciones
 * Se corregirá el proyecto con el último commit realizado en Github hasta las 23:59 del día anterior a la fecha de entrega
 * Las notas serán de manera logarítmica: (Por ejemplo 60% 4; 70% 5,5; 80% 7; 90% 8,5)
 * Las sugerencias sobre el HTML y CSS realizadas en el anterior parcial dejen ser corregidas.
 
-   
 ## Requisitos del FINAL
 - [ ] Todas las correcciones y mejoras solicitadas durante el primer y segundo parcial deben estar corregidas.
 - [ ] No debe haber errores presentes en el código (realizar Code > Inspect Code para verificar que no haya errores)
