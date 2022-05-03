@@ -17,6 +17,12 @@
 
 }
 
+main {
+    background: #abbaab; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #ffffff, #abbaab); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #ffffff, #abbaab); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
 p {
     font-family: 'Nunito', sans-serif;
 }
@@ -40,30 +46,47 @@ article {
     float: left;
 }
 
+#boton1 {
+    background-image: linear-gradient(to right, #1A2980 0%, #26D0CE 51%, #1A2980 100%)
+}
+
+#boton1 {
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;
+    box-shadow: 0 0 20px #eee;
+    border-radius: 10px;
+}
+
 #boton1:hover {
-    line-height: normal;
-    font-size: 30px;
-    font-weight: bold;
-    -webkit-transition: all 500ms ease;
-    -moz-transition: all 500ms ease;
-    -ms-transition: all 500ms ease;
-    -o-transition: all 500ms ease;
-    transition: all 500ms ease;
-    background-color: #26ce00;
-    border-radius: 50px;
+    background-position: right center;
+    color: #fff;
+    text-decoration: none;
+    font-size: 25px;
+}
+
+#boton2 {
+    background-image: linear-gradient(to right, #C04848 0%, #480048 51%, #C04848 100%)
+}
+
+#boton2 {
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;
+    box-shadow: 0 0 20px #eee;
+    border-radius: 10px;
 }
 
 #boton2:hover {
+    background-position: right center; /* change the direction of the change here */
+    color: #fff;
+    text-decoration: none;
     line-height: normal;
-    font-size: 30px;
-    font-weight: bold;
-    -webkit-transition: all 500ms ease;
-    -moz-transition: all 500ms ease;
-    -ms-transition: all 500ms ease;
-    -o-transition: all 500ms ease;
-    transition: all 500ms ease;
-    background-color: #ce0000;
-    border-radius: 50px;
+    font-size: 25px;
 }
 
 .myCanvas {
@@ -71,7 +94,10 @@ article {
     width: auto;
     height: auto;
     position: relative;
-    background: rgba(240, 255, 105, 0.47);
+    background: #ECE9E6; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #FFFFFF, #ECE9E6); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #FFFFFF, #ECE9E6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
 }
 
 footer #copyright {
