@@ -43,154 +43,239 @@
 <header>
     <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
         <div class="container-fluid">
-            <a class="navbar-brand d-flex flex-wrap align-items-center text-light text-decoration-none" href="#">
-                <img alt="Icono"  id="icono" src="Imagenes/icono.jpg">
-                    <h1 class="mb-0">
-                        Física - Tiro Parabólico
-                    </h1>
-             </a>
-             <button aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation"
-                     class="navbar-toggler"
-                     data-bs-target="#navbarCollapse" data-bs-toggle="collapse" type="button">
-                 <span class="navbar-toggler-icon"></span>
-             </button>
-             <div class="collapse navbar-collapse justify-content-end" id="navbarCollapse">
-                 <ul class="navbar-nav">
-                     <li class="nav-item">
-                         <a aria-current="page"
-                            class="d-flex align-items-center my-2 my-lg-0 me-lg-auto text-white text-decoration-none nav-link active"
-                            href="index.html">
-                             <svg class="bi bi-house-door" fill="currentColor" height="24" width="24">
-                                 <use xlink:href="#home"/>
-                             </svg>
-                             Página Principal
-                         </a>
-                     </li>
-                     <li class="nav-item">
-                         <a class="d-flex align-items-center my-2 my-lg-0 me-lg-auto text-decoration-none nav-link"
-                            href="#">
-                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-book" viewBox="0 0 16 16">
-                                 <path d="M1 2.828c.885-.37 2.154-.769 3.388-.893 1.33-.134 2.458.063 3.112.752v9.746c-.935-.53-2.12-.603-3.213-.493-1.18.12-2.37.461-3.287.811V2.828zm7.5-.141c.654-.689 1.782-.886 3.112-.752 1.234.124 2.503.523 3.388.893v9.923c-.918-.35-2.107-.692-3.287-.81-1.094-.111-2.278-.039-3.213.492V2.687zM8 1.783C7.015.936 5.587.81 4.287.94c-1.514.153-3.042.672-3.994 1.105A.5.5 0 0 0 0 2.5v11a.5.5 0 0 0 .707.455c.882-.4 2.303-.881 3.68-1.02 1.409-.142 2.59.087 3.223.877a.5.5 0 0 0 .78 0c.633-.79 1.814-1.019 3.222-.877 1.378.139 2.8.62 3.681 1.02A.5.5 0 0 0 16 13.5v-11a.5.5 0 0 0-.293-.455c-.952-.433-2.48-.952-3.994-1.105C10.413.809 8.985.936 8 1.783z"/>
-                             </svg>
-                             Teoría</a>
-                     </li>
-                     <li class="nav-item">
-                         <a class="d-flex align-items-center my-2 my-lg-0 me-lg-auto text-decoration-none nav-link"
-                            href="#">
-                             <svg class="bi bi-card-list" fill="currentColor" height="24" width="24">
-                                 <use xlink:href="#ejemplo"/>
-                             </svg>
-                             Ejemplos
-                         </a>
-                     </li>
-                 </ul>
-             </div>
-         </div>
-     </nav>
- </header>
+            <a class="navbar-brand d-flex flex-wrap align-items-center text-light text-decoration-none"
+               href="index.html">
+                <img alt="Icono" id="icono" src="Imagenes/icono.jpg">
+                <h1 class="mb-0">
+                    Física - Tiro Parabólico
+                </h1>
+            </a>
+            <button aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation"
+                    class="navbar-toggler"
+                    data-bs-target="#navbarCollapse" data-bs-toggle="collapse" type="button">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarCollapse">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a aria-current="page"
+                           class="d-flex align-items-center my-2 my-lg-0 me-lg-auto text-white nav-link active"
+                           href="index.html">
+                            <svg class="bi bi-house-door" fill="currentColor" height="24" width="24">
+                                <use xlink:href="#home"/>
+                            </svg>
+                            Página Principal
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="d-flex align-items-center my-2 my-lg-0 me-lg-auto text-decoration-none nav-link"
+                           href="teoria.html">
+                            <svg class="bi bi-book" fill="currentColor" height="24" viewBox="0 0 16 16"
+                                 width="24" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1 2.828c.885-.37 2.154-.769 3.388-.893 1.33-.134 2.458.063 3.112.752v9.746c-.935-.53-2.12-.603-3.213-.493-1.18.12-2.37.461-3.287.811V2.828zm7.5-.141c.654-.689 1.782-.886 3.112-.752 1.234.124 2.503.523 3.388.893v9.923c-.918-.35-2.107-.692-3.287-.81-1.094-.111-2.278-.039-3.213.492V2.687zM8 1.783C7.015.936 5.587.81 4.287.94c-1.514.153-3.042.672-3.994 1.105A.5.5 0 0 0 0 2.5v11a.5.5 0 0 0 .707.455c.882-.4 2.303-.881 3.68-1.02 1.409-.142 2.59.087 3.223.877a.5.5 0 0 0 .78 0c.633-.79 1.814-1.019 3.222-.877 1.378.139 2.8.62 3.681 1.02A.5.5 0 0 0 16 13.5v-11a.5.5 0 0 0-.293-.455c-.952-.433-2.48-.952-3.994-1.105C10.413.809 8.985.936 8 1.783z"/>
+                            </svg>
+                            Teoría</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="d-flex align-items-center my-2 my-lg-0 me-lg-auto text-decoration-none nav-link"
+                           href="ejemplos.html">
+                            <svg class="bi bi-card-list" fill="currentColor" height="24" width="24">
+                                <use xlink:href="#ejemplo"/>
+                            </svg>
+                            Ejemplos
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
 
- <main>
-     <section>
-         <article>
-             <div class="container-fluid text-center">
-                 <h2>Tiro Parabólico</h2>
-                 <p class="lead">El tiro parabólico es un movimiento que resulta
-                     de la unión de dos movimientos: El movimiento
-                     rectilíneo uniforme (componente horizontal) y,
-                     el movimiento vertical (componente vertical)
-                     que se efectúa por la gravedad y el resultado de
-                     este movimiento es una parábola.</p>
-             </div>
-         </article>
-     </section>
+<main>
+    <section>
+        <article>
+            <div class="container-fluid text-center">
+                <h2>Tiro Parabólico</h2>
+                <p class="lead">El tiro parabólico es un movimiento que resulta
+                    de la unión de dos movimientos: El movimiento
+                    rectilíneo uniforme (componente horizontal) y,
+                    el movimiento vertical (componente vertical)
+                    que se efectúa por la gravedad y el resultado de
+                    este movimiento es una parábola.</p>
+            </div>
+        </article>
+    </section>
 
-     <div class="row g-5">
-         <div class="col-md-6 col-lg-5">
-             <h3 class="mb-3">Ingrese los datos</h3>
-             <div class="row ">
-                 <div class="col-sm-6">
-                     <label class="col-sm-2 col-form-label" for="Vel. Inicial">Velocidad Inicial</label>
-                     <input id="Vel. Inicial" placeholder="Ingrese la velocidad inicial" type="number" value="0">
-                 </div>
-             </div>
-             <div class="col-sm-4">
-                 <label class="form-label" for="Unidades Vel. Inicial"></label>
-                 <select id="Unidades Vel. Inicial">
-                     <option value="Km/s"> Km/s</option>
-                     <option value="m/s"> m/s</option>
-                 </select>
-             </div>
-             <div class="row ">
-                 <div class="col-sm-6">
-                     <label class="col-sm-2 col-form-label" for="Ang. Inicial">Ángulo Inicial</label>
-                     <input id="Ang. Inicial" placeholder="Ingrese el ángulo inicial" type="number" value="0">
-                 </div>
-             </div>
-             <div class="col-sm-4">
-                 <label class="form-label" for="Unidades Ang. Inicial"></label>
-                 <select id="Unidades Ang. Inicial">
-                     <option value="grados">Grados</option>
-                     <option value="rad">rad</option>
-                 </select>
-             </div>
-             <div class="row ">
-                 <div class="col-sm-6">
-                     <label class="col-sm-2 col-form-label" for="Alt. Inicial">Altura Inicial</label>
-                     <input id="Alt. Inicial" placeholder="Ingrese la altura inicial" type="number" value="0">
-                 </div>
-             </div>
-             <div class="col-sm-4">
-                 <label class="form-label" for="Unidades Alt. Inicial"></label>
-                 <select id="Unidades Alt. Inicial">
-                     <option value="m"> m</option>
-                     <option value="pies"> pies</option>
-                     <option value="pulgadas"> pulgadas</option>
-                 </select>
-             </div>
-             <div class="row ">
-                 <div class="col-sm-6">
-                     <label class="col-sm-2 col-form-label" for="Alt. Final">Altura Final</label>
-                     <input id="Alt. Final" placeholder="Ingrese la altura final" type="number" value="0">
-                 </div>
-             </div>
-             <div class="col-sm-4">
-                 <label class="form-label" for="Unidades Alt. Final"></label>
-                 <select id="Unidades Alt. Final">
-                     <option value="m"> m</option>
-                     <option value="pies"> pies</option>
-                     <option value="pulgadas"> pulgadas</option>
-                 </select>
-             </div>
-             <div class="row ">
-                 <div class="col-sm-6">
-                     <label class="col-sm-2 col-form-label" for="Tiempo">Velocidad Inicial</label>
-                     <input id="Tiempo" placeholder="Ingrese el tiempo" type="number" value="0">
-                 </div>
-             </div>
-             <div class="col-sm-4">
-                 <label class="form-label" for="Unidades tiempo"></label>
-                 <select id="Unidades tiempo">
-                     <option value="segundos">Segundos</option>
-                     <option value="minutos">Minutos</option>
-                 </select>
-             </div>
-             <div class="col-sm-4">
-                 <label class="form-label" for="Gravedad"></label>
-                 <select id="Gravedad">
-                     <option value="m/s2">m/s2</option>
-                 </select>
-             </div>
-         </div>
-         <div class="col-md-5 col-lg-5 order-md-last">
-             <h4 class="d-flex justify-content-center mb-3">
-                 <span class="text-primary">Gráfico</span>
-             </h4>
-             <div class="wrapper" id="canvas-wrapper"></div>
-         </div>
-         <button class="w-100 btn btn-primary btn-lg" type="submit">Calcular</button>
-     </div>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-3">
+                <h3 class="mb-3">Ingrese los datos</h3>
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-4">
+                            <label class="form-label" for="Vel. Inicial">Velocidad Inicial</label>
+                        </div>
+                        <div class="col-3 mx-auto">
+                            <input class="form-control" id="Vel. Inicial" placeholder="Ingrese la velocidad inicial"
+                                   type="number"
+                                   value="0">
+                        </div>
+                        <div class="col-4">
+                            <label class="labeloption" for="Unidades Vel. Inicial"></label>
+                            <select class="form-select" id="Unidades Vel. Inicial">
+                                <option value="m/s">m/s</option>
+                                <option value="Km/h">km/h</option>
+                                <option value="Km/s">Km/s</option>
+                                <option value="ft/s">ft/s</option>
+                                <option value="mph">mph</option>
+                                <option value="mps">mps</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-4">
+                            <label class="form-label" for="Ang. Inicial">Ángulo Inicial</label>
+                        </div>
+                        <div class="col-3 mx-auto">
+                            <input class="form-control" id="Ang. Inicial" placeholder="Ingrese el ángulo inicial"
+                                   type="number"
+                                   value="0">
+                        </div>
+                        <div class="col-4">
+                            <label class="labeloption" for="Unidades Ang. Inicial"></label>
+                            <select class="form-select" id="Unidades Ang. Inicial">
+                                <option value="grados">Grados</option>
+                                <option value="minutos">Minutos </option>
+                                <option value="segundos">Segundos</option>
+                                <option value="rad"> Rad</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-4">
+                            <label class="form-label" for="Alt. Inicial">Altura Inicial</label>
+                        </div>
+                        <div class="col-3 mx-auto">
+                            <input class="form-control" id="Alt. Inicial" placeholder="Ingrese la altura inicial"
+                                   type="number"
+                                   value="0">
+                        </div>
+                        <div class="col-4">
+                            <label class="labeloption" for="Unidades Alt. Inicial"></label>
+                            <select class="form-select" id="Unidades Alt. Inicial">
+                                <option value="metro">Metro</option>
+                                <option value="kilometro">Kilometro</option>
+                                <option value="pies">Pies</option>
+                                <option value="pulgadas">Pulgadas</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-4">
+                            <label class="form-label" for="Alt. Final">Altura Final</label>
 
- </main>
+                        </div>
+                        <div class="col-3 mx-auto">
+                            <input class="form-control" id="Alt. Final" placeholder="Ingrese la altura final"
+                                   type="number"
+                                   value="0">
+                        </div>
+                        <div class="col-4">
+                            <label class="labeloption" for="Unidades Alt. Final"></label>
+                            <select class="form-select" id="Unidades Alt. Final">
+                                <option value="metro">Metro</option>
+                                <option value="kilometro">Kilometro</option>
+                                <option value="pies">Pies</option>
+                                <option value="pulgadas">Pulgadas</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-4">
+                            <label class="form-label" for="Gravedad"> Gravedad </label>
+                        </div>
+                        <div class="col-3 mx-auto">
+                            <input class="form-control" id="Gravedad" placeholder="Ingrese la gravedad" type="number"
+                                   value="9.8">
+                        </div>
 
- </body>
- </html>
+                        <div class="col-4">
+                            <label class="labeloption" for="Unidad gravedad"></label>
+                            <select class="form-select" id="Unidad gravedad">
+                                <option value="m/s2">m/s2</option>
+                                <option value="Gal">Gal</option>
+                                <option value="ft/s2">ft/s2</option>
+                                <option value="km/s2">km/s2</option>
+                                <option value="in/s2">in/s2</option>
+                                <option value="yd/s2">yd/s2</option>
+                            </select>
+                        </div>
+                    </div>
+                    <button class="btn btn-primary btn-lg mt-3" type="submit">Calcular</button>
+                    <button class="btn btn-primary btn-lg mt-3" type="button">Resetear</button>
+                    <h3 class="my-3">Resultados</h3>
+                    <div class="row">
+                        <div class="col-4">
+                            <label class="form-label" for="Distancia">Distancia</label>
+                        </div>
+                        <div class="col-3 mx-auto">
+                            <input class="form-control" disabled id="Distancia" type="number" value="0">
+                        </div>
+                        <div class="col-4">
+                            <label class="labeloption" for="Unidades Distancia"></label>
+                            <select class="form-select" id="Unidades Distancia">
+                                <option value="metro">Metro</option>
+                                <option value="kilometro">Kilometro</option>
+                                <option value="pies">Pies</option>
+                                <option value="pulgadas">Pulgadas</option>
+                                <option value="yardas">Yardas</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-4">
+                            <label class="form-label" for="Altura máxima">Altura máxima</label>
+                        </div>
+                        <div class="col-3 mx-auto">
+                            <input class="form-control" disabled id="Altura máxima" type="number" value="0">
+                        </div>
+                        <div class="col-4">
+                            <label class="labeloption" for="Unidades Alt. máxima"></label>
+                            <select class="form-select" id="Unidades Alt. máxima">
+                                <option value="metro"> Metro</option>
+                                <option value="pies"> Pies</option>
+                                <option value="pulgadas"> Pulgadas</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-4">
+                            <label class="form-label" for="Tiempo">Tiempo</label>
+                        </div>
+                        <div class="col-3 mx-auto">
+                            <input class="form-control" id="Tiempo" type="number" value="0" disabled>
+                        </div>
+                        <div class="col-4">
+                            <label class="labeloption" for="Unidades tiempo"></label>
+                            <select class="form-select" id="Unidades tiempo">
+                                <option value="segundo">Segundo</option>
+                                <option value="Minuto">Minuto</option>
+                                <option value="Hora">Hora</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-8">
+                <h4 class="d-flex justify-content-center mb-3">
+                    <span class="text-primary">Gráfico</span>
+                </h4>
+                <div class="wrapper" id="canvas-wrapper"></div>
+            </div>
+        </div>
+    </div>
+
+</main>
+
+</body>
+</html>

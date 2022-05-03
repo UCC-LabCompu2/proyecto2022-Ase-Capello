@@ -17,6 +17,10 @@
 
 }
 
+.labeloption{
+    display:none;
+}
+
 #ocultarsvg{
     display: none;
 }
