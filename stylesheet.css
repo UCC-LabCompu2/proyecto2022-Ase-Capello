@@ -17,8 +17,11 @@
 
 }
 p{
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Nunito', sans-serif;
 }
+
+
+
 .labeloption{
     display:none;
 }
@@ -69,4 +72,8 @@ article{
     height:auto;
     position: relative;
     background: rgba(240, 255, 105, 0.47);
+}
+
+footer #copyright {
+    background-color: rgba(0, 0, 0, 0.2)
 }
