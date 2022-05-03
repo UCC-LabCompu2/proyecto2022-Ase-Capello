@@ -211,8 +211,8 @@
                             </select>
                         </div>
                     </div>
-                    <button class="btn btn-primary btn-lg mt-3" type="submit">Calcular</button>
-                    <button class="btn btn-primary btn-lg mt-3" type="button">Resetear</button>
+                    <button class="btn btn-primary btn-lg mt-3" id="boton1" type="button">Calcular</button>
+                    <button class="btn btn-primary btn-lg mt-3" id="boton2" type="button">Resetear</button>
                     <h3 class="my-3">Resultados</h3>
                     <div class="row">
                         <div class="col-4">
@@ -270,7 +270,9 @@
                 <h4 class="d-flex justify-content-center mb-3">
                     <span class="text-primary">Gráfico</span>
                 </h4>
-                <div class="wrapper" id="canvas-wrapper"></div>
+                <canvas class="myCanvas" id="myCanvas" height="600px" width="1000px">
+                    Tu navegador no soporta el tag de HTML5 canvas.
+                </canvas>
             </div>
         </div>
     </div>
