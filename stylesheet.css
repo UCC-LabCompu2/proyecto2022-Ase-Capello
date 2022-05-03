@@ -1,40 +1,40 @@
-@media (max-width: 353px){
+@media (max-width: 353px) {
     header {
         padding-bottom: 7.5rem;
     }
 }
 
-@media (min-width:354px) and (max-width: 419px){
+@media (min-width: 354px) and (max-width: 419px) {
     header {
         padding-bottom: 5.5rem;
     }
 }
 
-@media (min-width:420px) {
-    header{
+@media (min-width: 420px) {
+    header {
         padding-bottom: 3.5rem;
     }
 
 }
-p{
+
+p {
     font-family: 'Nunito', sans-serif;
 }
 
 
-
-.labeloption{
-    display:none;
-}
-
-#ocultarsvg{
+.labeloption {
     display: none;
 }
 
-article{
+#ocultarsvg {
+    display: none;
+}
+
+article {
     margin-top: 1rem;
 }
 
-#icono{
+#icono {
     height: 35px;
     width: 35px;
     float: left;
@@ -68,8 +68,8 @@ article{
 
 .myCanvas {
     border: 1px solid #000000;
-    width:auto;
-    height:auto;
+    width: auto;
+    height: auto;
     position: relative;
     background: rgba(240, 255, 105, 0.47);
 }
