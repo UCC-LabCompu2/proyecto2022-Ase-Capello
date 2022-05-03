@@ -43,7 +43,7 @@ Estructura de Proyecto Lab de Computación II - 2022
 - [x] Identar correctamente el código (en Webstorm Ctrl+Alt+L)
 - [x] No debe haber errores presentes (realizar *Code* > *Inspect Code* para verificar que no haya errores)
 - [x] Se debe emplear algún favicon
-- [ ] Emplear alguna fuente de google fonts o subir al proyecto alguna fuente externa
+- [X] Emplear alguna fuente de google fonts o subir al proyecto alguna fuente externa
 - [x] Debe haber navegación entre todas las páginas
 
 ### Sobre el HTML
