@@ -1,13 +1,8 @@
 <p align="center">
  <img width="300px" src="https://3.bp.blogspot.com/-RAdfA9Kbe60/V2DUVbP0SBI/AAAAAAAABH4/rIehNubcD7MPREm10GvLyLR2CoIKFl-HQCLcB/s400/angrybirds2.png" align="center" alt="GitHub Readme Stats" />
  <h2 align="center">Tiro Parabólico</h2>
- <p align="center">Get dynamically generated GitHub stats on your READMEs!</p>
 </p>
 
-[![Mateo GitHub stats](https://github-readme-stats.vercel.app/api?username=MateoAse)]
-[![Angelo GitHub stats](https://github-readme-stats.vercel.app/api?username=angcapello)]
-
-# Tiro Parabólico
 
 Se diseñó esta página web para aquellos usuarios que deseen realizar un tiro parabólico
 [Link a la Página](https://ucc-labcompu2.github.io/proyecto2022-Ase-Capello/)
