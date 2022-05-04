@@ -18,7 +18,11 @@ WebStorm: IDE by JetBrains.
 
 ## Tecnologías usadas
 
-HTML, CSS, JavaScript, Bootstrap, Git, Github y otras.
+<img alt="html5" src="https://img.shields.io/badge/-HTML5-E34F26?style=flat-square&logo=html5&logoColor=white" />,
+CSS, <code><img height="20" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/javascript/javascript.png"></code>
+,
+Bootstrap,<img alt="git" src="https://img.shields.io/badge/-Git-F05032?style=flat-square&logo=git&logoColor=white" />,
+Github y otras.
 
 ## Control de Versiones
 
