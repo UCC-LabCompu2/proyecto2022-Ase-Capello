@@ -14,15 +14,18 @@ desea consultar Teoría o Ejemplos seleccionamos el botón correspondiente.
 
 ## Construido con
 
-WebStorm: IDE by JetBrains.
+<img src="https://img.shields.io/badge/WebStorm-000000?style=for-the-badge&logo=WebStorm&logoColor=white" /> 
+<img src="https://img.shields.io/badge/Visual_Studio_Code-0078D4?style=for-the-badge&logo=visual%20studio%20code&logoColor=white" />
 
 ## Tecnologías usadas
 
 <img alt="html5" src="https://img.shields.io/badge/-HTML5-E34F26?style=flat-square&logo=html5&logoColor=white" />,
-CSS, <code><img height="20" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/javascript/javascript.png"></code>
+<img src = "https://img.shields.io/badge/-CSS3-1572B6?style=flat&logo=css3&logoColor=white">
+, <img src="https://img.shields.io/badge/-JavaScript-eed718?style=flat&logo=javascript&logoColor=ffffff">
 ,
-Bootstrap,<img alt="git" src="https://img.shields.io/badge/-Git-F05032?style=flat-square&logo=git&logoColor=white" />,
-Github y otras.
+<img src="https://img.shields.io/badge/-Bootstrap-563D7C?style=flat&logo=bootstrap&logoColor=white">
+,<img alt="git" src="https://img.shields.io/badge/-Git-F05032?style=flat-square&logo=git&logoColor=white" />,
+<img src="http://img.shields.io/badge/-Github-000000?style=flat&logo=github&logoColor=FFFFFF"> y otras.
 
 ## Control de Versiones
 
@@ -34,6 +37,7 @@ Las sugerencias o ideas para mejorar el programa son siempre bienvenidas, si a u
 
 ## Autores
 :electron:[Mateo Ase](https://github.com/MateoAse)
+[![MateoAse GitHub stats](https://github-readme-stats.vercel.app/api?username=mateo)](https://github.com/anuraghazra/github-readme-stats)
 :electron:[Angelo Carlos Capello](https://github.com/angcapello)
 
 **Universidad Católica de Córdoba.**
