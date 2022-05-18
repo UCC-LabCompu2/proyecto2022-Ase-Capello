@@ -118,12 +118,13 @@
 
     <!-- Background Video -->
     <video autoplay id="background-video" loop muted poster="https://assets.codepen.io/6093409/river.jpg">
+        <source src="Imagenes-Videos/Background_Video_MP4_MPG4.mp4" type="video/mp4">
         <source src="Imagenes-Videos/Background_Video_MP4_MPEG4.m4v" type="video/mp4">
         <source src="Imagenes-Videos/Background%20_Video_WEBM_VP8.webm" type="video/webm">
-        <source src="Imagenes-Videos/Background_video_WEBM_AV1.webm" type="video/webm">
+        <source onerror="fallback(parentNode)" src="Imagenes-Videos/Background_video_WEBM_AV1.webm" type="video/webm">
         Su navegador no soporta la etiqueta de vídeo.
     </video>
-
+    
     <!-- Overlay Background Video -->
     <div class="overlay"></div>
 
