@@ -55,11 +55,22 @@ body {
     float: left;
 }
 
-@media (min-width: 420px) {
+@media (min-width: 419px) {
     header {
-        padding-bottom: 3.5rem;
+        padding-bottom: 4rem;
     }
+}
 
+@media (min-width: 353px) and (max-width: 418px) {
+    header {
+        padding-bottom: 6rem;
+    }
+}
+
+@media (max-width: 352px) {
+    header {
+        padding-bottom: 8rem;
+    }
 }
 
 article {
