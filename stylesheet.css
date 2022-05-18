@@ -55,19 +55,19 @@ body {
     float: left;
 }
 
-@media (min-width: 419px) {
+@media (min-width: 428px) {
     header {
         padding-bottom: 4rem;
     }
 }
 
-@media (min-width: 353px) and (max-width: 418px) {
+@media (min-width: 362px) and (max-width: 427px) {
     header {
         padding-bottom: 6rem;
     }
 }
 
-@media (max-width: 352px) {
+@media (max-width: 361px) {
     header {
         padding-bottom: 8rem;
     }
