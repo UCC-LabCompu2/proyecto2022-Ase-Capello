@@ -1,3 +1,8 @@
+/**
+ * En caso de no soportar el codec del video, elimina el primer elemento <video> y
+ * continua con el siguiente recurso sucesivamente.
+ * @param video - el elemento <video>
+ */
 function fallback(video) {
     // replace <video> with its contents
     while (video.hasChildNodes()) {
