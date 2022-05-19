@@ -5,7 +5,7 @@
     margin: 0;
     padding: 0;
     font-family: 'Nunito', sans-serif;
-    color: #ffffff;
+    color: #F3F6F6;
 }
 
 /* Body: Configuración del color de fondo de la página. */
@@ -15,7 +15,7 @@ body {
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
-    background-color: #1C1C1CFF;
+    background-color: #030203;
     background-blend-mode: multiply;
 }
 
@@ -76,6 +76,10 @@ body {
     header {
         padding-bottom: 8rem;
     }
+}
+
+nav {
+    background: #211D25;
 }
 
 article {
@@ -141,10 +145,6 @@ article {
     background: linear-gradient(to right, #FFFFFF, #ECE9E6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
-footer #copyright {
-    background-color: rgba(0, 0, 0, 0.2)
-}
-
 .imgcontainer {
     text-align: center;
     margin-left: 1.8rem;
@@ -188,7 +188,7 @@ body img {
 }
 
 .alternative-font {
-    color: #76ff00;
+    color: #FFFF4E;
     font-family: "Shadows Into Light", cursive;
     font-size: 1.2rem;
 }
@@ -204,11 +204,19 @@ body img {
 }
 
 div a, p a {
-    color: #ff1919;
+    color: #B0A9FF;
     text-decoration: none
 }
 
-a:hover {
-    color: #006da3;
+div a:hover, p a:hover {
+    color: #85FFCF;
     text-decoration: underline
+}
+
+footer {
+    background-color: #231A1A;
+}
+
+footer #copyright {
+    background: #130F0F;
 }
