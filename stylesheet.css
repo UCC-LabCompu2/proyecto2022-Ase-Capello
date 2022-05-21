@@ -90,6 +90,14 @@ article {
     display: none;
 }
 
+.form-control, select {
+    background-color: #F7F7F7 !important;
+}
+
+select option {
+    color: #212529;
+}
+
 #boton1 {
     background-image: linear-gradient(to right, #1A2980 0%, #26D0CE 51%, #1A2980 100%)
 }
@@ -141,8 +149,6 @@ article {
     height: auto;
     position: relative;
     background: #ECE9E6; /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #FFFFFF, #ECE9E6); /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #FFFFFF, #ECE9E6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 .imgcontainer {
@@ -162,7 +168,7 @@ body img {
     margin-top: 3rem;
     margin-bottom: 3rem;
     position: relative;
-    background-image: linear-gradient(to right, #434343 0%, black 100%);
+    background-image: linear-gradient(to right, #212121 0%, black 100%);
     border-color: #ff1919;
     border-left-width: 3px;
     border-right-width: 3px;
@@ -177,7 +183,7 @@ body img {
     padding: 1rem;
     margin: 3rem 1.8rem;
     position: relative;
-    background-image: linear-gradient(to right, #434343 0%, black 100%);
+    background-image: linear-gradient(to right, #212121 0%, black 100%);
     border-color: #ff1919;
     border-left-width: 3px;
     border-right-width: 3px;
