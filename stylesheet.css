@@ -49,15 +49,49 @@ body {
     z-index: -1;
 }
 
-/* Ocultar los elementos SVG. */
-#hidesvg {
-    display: none;
-}
-
 #icono {
     height: 35px;
     width: 35px;
     float: left;
+}
+
+#home {
+    background-image: url('Imagenes-Videos/home.png');
+    height: 24px;
+    width: 24px;
+
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#home:hover {
+    background-image: url('Imagenes-Videos/home.gif');
+}
+
+#book {
+    background-image: url('Imagenes-Videos/book.png');
+    height: 24px;
+    width: 24px;
+
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#book:hover {
+    background-image: url('Imagenes-Videos/book.gif');
+}
+
+#notebook {
+    background-image: url('Imagenes-Videos/notebook.png');
+    height: 24px;
+    width: 24px;
+
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#notebook:hover {
+    background-image: url('Imagenes-Videos/notebook.gif');
 }
 
 @media (min-width: 428px) {
@@ -223,6 +257,25 @@ footer {
     background-color: #231A1A;
 }
 
+.btn-outline-light:hover {
+    color: #26D0CE !important;
+    background-color: #696869 !important;
+}
+
+.github {
+    background-image: url('Imagenes-Videos/github.png');
+    height: 24px;
+    width: 24px;
+
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.github:hover {
+    background-image: url('Imagenes-Videos/github.gif');
+}
+
 footer #copyright {
     background: #130F0F;
 }
+

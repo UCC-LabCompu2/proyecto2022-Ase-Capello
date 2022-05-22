@@ -37,30 +37,13 @@
 <!-- Video-wrapper -->
 <div class="video-wrapper">
 
-    <!-- Load and Hide SVG -->
-    <svg id="hidesvg" xmlns="http://www.w3.org/2000/svg">
-        <symbol id="home" viewBox="0 0 16 16">
-            <path d="M8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4.5a.5.5 0 0 0 .5-.5v-4h2v4a.5.5 0 0 0 .5.5H14a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.354 1.146zM2.5 14V7.707l5.5-5.5 5.5 5.5V14H10v-4a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5v4H2.5z"/>
-        </symbol>
-        <symbol id="teoria" viewBox="0 0 16 16">
-            <path d="M1 2.828c.885-.37 2.154-.769 3.388-.893 1.33-.134 2.458.063 3.112.752v9.746c-.935-.53-2.12-.603-3.213-.493-1.18.12-2.37.461-3.287.811V2.828zm7.5-.141c.654-.689 1.782-.886 3.112-.752 1.234.124 2.503.523 3.388.893v9.923c-.918-.35-2.107-.692-3.287-.81-1.094-.111-2.278-.039-3.213.492V2.687zM8 1.783C7.015.936 5.587.81 4.287.94c-1.514.153-3.042.672-3.994 1.105A.5.5 0 0 0 0 2.5v11a.5.5 0 0 0 .707.455c.882-.4 2.303-.881 3.68-1.02 1.409-.142 2.59.087 3.223.877a.5.5 0 0 0 .78 0c.633-.79 1.814-1.019 3.222-.877 1.378.139 2.8.62 3.681 1.02A.5.5 0 0 0 16 13.5v-11a.5.5 0 0 0-.293-.455c-.952-.433-2.48-.952-3.994-1.105C10.413.809 8.985.936 8 1.783z"/>
-        </symbol>
-        <symbol id="ejemplo" viewBox="0 0 16 16">
-            <path d="M14.5 3a.5.5 0 0 1 .5.5v9a.5.5 0 0 1-.5.5h-13a.5.5 0 0 1-.5-.5v-9a.5.5 0 0 1 .5-.5h13zm-13-1A1.5 1.5 0 0 0 0 3.5v9A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5v-9A1.5 1.5 0 0 0 14.5 2h-13z"/>
-            <path d="M5 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 5 8zm0-2.5a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5zm0 5a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5zm-1-5a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0zM4 8a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0zm0 2.5a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0z"/>
-        </symbol>
-        <symbol id="github" viewBox="0 0 16 16">
-            <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
-        </symbol>
-    </svg>
-
     <!-- Header -->
     <header>
-        <nav class="navbar navbar-expand-md navbar-dark fixed-top ">
+        <nav class="navbar nav-fill d-flex navbar-expand-md navbar-dark fixed-top ">
             <div class="container-fluid">
 
                 <!-- Title Header-->
-                <a class="navbar-brand d-flex flex-wrap align-items-center text-light text-decoration-none"
+                <a class="navbar-brand d-inline-flex flex-wrap flex-md-nowrap align-items-center text-light text-decoration-none"
                    href="index.html">
                     <img alt="Icono" id="icono" src="Imagenes-Videos/icono.jpg">
                     <h1 class="mb-0 ms-2">
@@ -79,35 +62,28 @@
                     <ul class="navbar-nav">
 
                         <!-- Button Página Principal -->
-                        <li class="nav-item">
+                        <li class="nav-item align-self-center me-4">
                             <a aria-current="page"
-                               class="d-flex align-items-center my-2 my-lg-0 me-lg-auto text-white text-decoration-none nav-link active"
-                               href="index.html">
-                                <svg class="bi bi-house-door me-lg-2" fill="currentColor" height="24" width="24">
-                                    <use xlink:href="#home"/>
-                                </svg>
+                               class="d-inline-flex p-0 text-white text-decoration-none nav-link active"
+                               href="index.html" id="prueba">
+                                <div id="home"></div>
                                 Página Principal
                             </a>
                         </li>
 
                         <!-- Button Teoría -->
-                        <li class="nav-item">
-                            <a class="d-flex align-items-center my-2 my-lg-0 me-lg-auto text-decoration-none nav-link"
+                        <li class="nav-item align-self-center me-4">
+                            <a class="d-inline-flex p-0 text-decoration-none nav-link"
                                href="teoria.html">
-                                <svg class="bi bi-book me-lg-2" fill="currentColor" height="24" viewBox="0 0 16 16">
-                                    width="24"
-                                    <use xlink:href="#teoria"/>
-                                </svg>
+                                <div id="book"></div>
                                 Teoría</a>
                         </li>
 
                         <!-- Button Ejemplos -->
-                        <li class="nav-item">
-                            <a class="d-flex align-items-center my-2 my-lg-0 me-lg-auto text-decoration-none nav-link"
+                        <li class="nav-item align-self-center me-2">
+                            <a class="d-inline-flex p-0 text-decoration-none nav-link"
                                href="ejemplos.html">
-                                <svg class="bi bi-card-list me-lg-2" fill="currentColor" height="24" width="24">
-                                    <use xlink:href="#ejemplo"/>
-                                </svg>
+                                <div id="notebook"></div>
                                 Ejemplos
                             </a>
                         </li>
@@ -168,11 +144,11 @@
                             <div class="container-fluid">
 
                                 <!-- Formulario de Velocidad Inicial y unidades -->
-                                <div class="form-group row align-items-center">
+                                <div class="form-group row align-items-center mt-1">
                                     <label class="col-sm-3 col-form-label" for="Vel. Inicial">Velocidad Inicial</label>
                                     <label class="labeloption" for="Unidades Vel. Inicial">Unidades de Velocidad
                                         Inicial</label>
-                                    <div class="col-sm-9 mt-1 mx-auto">
+                                    <div class="col-sm-9 mx-auto">
                                         <div class="input-group">
 
                                             <!-- Formulario de Velocidad Inicial -->
@@ -195,11 +171,11 @@
                                 </div>
 
                                 <!-- Formulario de Ángulo Inicial y unidades -->
-                                <div class="form-group row align-items-center">
+                                <div class="form-group row align-items-center mt-1">
                                     <label class="col-sm-3 col-form-label" for="Ang. Inicial">Ángulo Inicial</label>
                                     <label class="labeloption" for="Unidades Ang. Inicial">Unidades de Ángulo
                                         inicial</label>
-                                    <div class="col-sm-9 mt-1 mx-auto">
+                                    <div class="col-sm-9 mx-auto">
                                         <div class="input-group">
 
                                             <!-- Formulario de Ángulo Inicial-->
@@ -220,11 +196,11 @@
                                 </div>
 
                                 <!-- Formulario de Altura Inicial y unidades -->
-                                <div class="form-group row align-items-center">
+                                <div class="form-group row align-items-center mt-1">
                                     <label class="col-sm-3 col-form-label" for="Alt. Inicial">Altura Inicial</label>
                                     <label class="labeloption" for="Unidades Alt. Inicial">Unidades de Altura
                                         Inicial</label>
-                                    <div class="col-sm-9 mt-1 mx-auto">
+                                    <div class="col-sm-9 mx-auto">
                                         <div class="input-group">
 
                                             <!-- Formulario de Altura Inicial-->
@@ -246,11 +222,11 @@
                                 </div>
 
                                 <!-- Formulario de Altura Final y unidades -->
-                                <div class="form-group row align-items-center">
+                                <div class="form-group row align-items-center mt-1">
                                     <label class="col-sm-3 col-form-label" for="Alt. Final">Altura Final</label>
                                     <label class="labeloption" for="Unidades Alt. Final">Unidades de Altura
                                         Final</label>
-                                    <div class="col-sm-9 mt-1 mx-auto">
+                                    <div class="col-sm-9 mx-auto">
                                         <div class="input-group">
 
                                             <!-- Formulario de Altura Final-->
@@ -272,10 +248,10 @@
                                 </div>
 
                                 <!-- Formulario de Gravedad y unidades -->
-                                <div class="form-group row align-items-center">
+                                <div class="form-group row align-items-center mt-1">
                                     <label class="col-sm-3 col-form-label" for="Gravedad"> Gravedad </label>
                                     <label class="labeloption" for="Unidad gravedad">Unidades de Gravedad</label>
-                                    <div class="col-sm-9 mt-1 mx-auto">
+                                    <div class="col-sm-9 mx-auto">
                                         <div class="input-group">
 
                                             <!-- Formulario de Gravedad -->
@@ -299,9 +275,9 @@
                             </div>
 
                             <!-- Botonera -->
-                            <div class="container">
+                            <div class="container-fluid">
                                 <!-- Botones de cálculo -->
-                                <div class="form-group row align-items-center justify-content-end mt-3">
+                                <div class="row align-items-center justify-content-end mt-3">
 
                                     <!-- Botones de Calcular -->
                                     <div class="col-auto">
@@ -418,19 +394,17 @@
                 <p class="lead mb-0">Desarrollado por: </p>
 
                 <!-- Botón Github de Ase, Mateo -->
-                <a class="btn btn-outline-light btn-floating m-1" href="https://github.com/MateoAse" role="button">
+                <a class="d-inline-flex btn btn-outline-light btn-floating m-1 text-decoration-none"
+                   href="https://github.com/MateoAse" role="button">
                     Ase, Mateo
-                    <svg class="bi bi-github" fill="currentColor" height="24" width="24">
-                        <use xlink:href="#github"/>
-                    </svg>
+                    <div class="github"></div>
                 </a>
 
                 <!-- Botón Github de Capello, Angelo -->
-                <a class="btn btn-outline-light btn-floating m-1" href="https://github.com/angcapello" role="button">
+                <a class="d-inline-flex btn btn-outline-light btn-floating m-1 text-decoration-none"
+                   href="https://github.com/angcapello" role="button">
                     Capello, Angelo
-                    <svg class="bi bi-github" fill="currentColor" height="24" width="24">
-                        <use xlink:href="#github"/>
-                    </svg>
+                    <div class="github"></div>
                 </a>
             </section>
         </div>
