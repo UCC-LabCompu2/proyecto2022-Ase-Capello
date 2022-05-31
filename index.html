@@ -8,6 +8,9 @@
     <meta content="física, tiro parabólico, tiro oblicuo" name="keywords">
     <meta content="Ejercicio tiro parabólico de física" name="description">
 
+    <!-- Load JavaScript -->
+    <script src="script.js" type="text/javascript"></script>
+
     <!-- Load Bootstrap -->
     <link crossorigin="anonymous" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
           integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" rel="stylesheet">
@@ -23,16 +26,13 @@
     <!-- Load Custom CSS -->
     <link href="stylesheet.css" rel="stylesheet" type="text/css">
 
-    <!-- Load JavaScript -->
-    <script src="script.js" type="text/javascript"></script>
-
     <!--Favicon -->
     <link href="images-videos/favicon.gif" rel="icon" type="image/gif"/>
 
     <title>Tiro Parabólico</title>
 </head>
 
-<body>
+<body onload="ejes()">
 
 <!-- Video-wrapper -->
 <div class="video-wrapper">
@@ -43,6 +43,7 @@
             <div class="container-fluid">
 
                 <!-- Title Header-->
+                <!-- Creating a link to the index.html file. -->
                 <a class="navbar-brand d-inline-flex flex-wrap flex-md-nowrap align-items-center text-light text-decoration-none"
                    href="index.html">
                     <img alt="Icono" id="icon" src="images-videos/icon.jpg">
@@ -52,6 +53,7 @@
                 </a>
 
                 <!--Collapse Button  -->
+                <!-- Creating a button that will be used to toggle the navbar. -->
                 <button aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation"
                         class="navbar-toggler"
                         data-bs-target="#navbarCollapse" data-bs-toggle="collapse" type="button">
@@ -62,6 +64,7 @@
                     <ul class="navbar-nav">
 
                         <!-- Homepage Button -->
+                        <!-- Creating a link to the home page. -->
                         <li class="nav-item align-self-center me-4">
                             <a aria-current="page"
                                class="d-inline-flex p-0 text-white text-decoration-none nav-link active"
@@ -72,6 +75,7 @@
                         </li>
 
                         <!-- Theory Button -->
+                        <!-- Creating a link to the theory page. -->
                         <li class="nav-item align-self-center me-4">
                             <a class="d-inline-flex p-0 text-decoration-none nav-link"
                                href="theory.html">
@@ -80,6 +84,7 @@
                         </li>
 
                         <!-- Examples Button -->
+                        <!-- Creating a link to the examples page. -->
                         <li class="nav-item align-self-center me-2">
                             <a class="d-inline-flex p-0 text-decoration-none nav-link"
                                href="examples.html">
@@ -87,6 +92,7 @@
                                 Ejemplos
                             </a>
                         </li>
+
                     </ul>
                 </div>
             </div>
@@ -94,6 +100,7 @@
     </header>
 
     <!-- Background Video -->
+    <!-- A video tag that is playing a video in the background of the page. -->
     <video autoplay id="background-video" loop muted playsinline preload>
         <source src="images-videos/background_video_MP4-WEBM-VP9.webm" type="video/webm; codecs=vp9">
         <source src="images-videos/background_video_WEBM-VP8.webm" type="video/webm; codecs=vp8">
@@ -114,6 +121,7 @@
             <article>
 
                 <!-- Header Title -->
+                <!-- Creating a header with the text "Tiro Parabólico" -->
                 <div class="container-fluid text-center">
                     <h2>Tiro Parabólico</h2>
 
@@ -147,21 +155,21 @@
 
                                     <!-- Initial Velocity and Units Form -->
                                     <div class="form-group row align-items-center mt-1">
-                                        <label class="col-sm-3 col-form-label" for="initial-VEL.">Velocidad
+                                        <label class="col-sm-3 col-form-label" for="initial_speed">Velocidad
                                             Inicial</label>
-                                        <label class="label_option" for="initial-VEL.-units">Unidades de Velocidad
+                                        <label class="label-option" for="initial_speed_units">Unidades de Velocidad
                                             Inicial</label>
                                         <div class="col-sm-9 mx-auto">
                                             <div class="input-group">
 
                                                 <!-- Initial Speed Form -->
                                                 <div class="col-6">
-                                                    <input class="form-control" id="initial-VEL."
-                                                           min="0"
+                                                    <input class="form-control" id="initial_speed" max="100" min="0"
+                                                           name="test-test"
+                                                           onchange="checkValidInputs(this.id, this.value)"
                                                            placeholder="Ingrese la velocidad inicial"
-                                                           required=""
-                                                           step="0.01"
-                                                           type="number" value="0">
+                                                           required step="0.01" type="number" value="0">
+
                                                     <div class="invalid-tooltip">
                                                         Por favor ingrese un valor numérico positivo.
                                                     </div>
@@ -169,7 +177,7 @@
 
                                                 <!-- Initial Velocity Units Form -->
                                                 <div class="col-6">
-                                                    <select class="form-select" id="initial-VEL.-units">
+                                                    <select class="form-select" id="initial_speed_units">
                                                         <option value="m/s">m/s</option>
                                                         <option value="Km/h">km/h</option>
                                                         <option value="Km/s">Km/s</option>
@@ -185,20 +193,18 @@
 
                                     <!-- Angle and Units Form -->
                                     <div class="form-group row align-items-center mt-1">
-                                        <label class="col-sm-3 col-form-label" for="ANG.">Ángulo</label>
-                                        <label class="label_option" for="ANG.-units">Unidades de Ángulo</label>
+                                        <label class="col-sm-3 col-form-label" for="angle">Ángulo</label>
+                                        <label class="label-option" for="angle_units">Unidades de Ángulo</label>
                                         <div class="col-sm-9 mx-auto">
                                             <div class="input-group">
 
                                                 <!--Angle Form-->
                                                 <div class="col-6">
-                                                    <input class="form-control" id="ANG."
-                                                           min="0"
+                                                    <input class="form-control" id="angle" max="90" min="0"
+                                                           onchange="checkValidInputs(this.id, this.value)"
                                                            placeholder="Ingrese el ángulo inicial"
-                                                           required
-                                                           step="0.01"
-                                                           type="number"
-                                                           value="0">
+                                                           required step="0.01" type="number" value="0">
+
                                                     <div class="invalid-tooltip">
                                                         Por favor ingrese un valor numérico positivo.
                                                     </div>
@@ -206,7 +212,7 @@
 
                                                 <!-- Angle Units Form -->
                                                 <div class="col-6">
-                                                    <select class="form-select" id="ANG.-units">
+                                                    <select class="form-select" id="angle_units">
                                                         <option value="degree">Grados</option>
                                                         <option value="minutes">Minutos</option>
                                                         <option value="seconds">Segundos</option>
@@ -219,21 +225,20 @@
 
                                     <!-- Initial Height Form and Units -->
                                     <div class="form-group row align-items-center mt-1">
-                                        <label class="col-sm-3 col-form-label" for="initial-HT.">Altura Inicial</label>
-                                        <label class="label_option" for="initial-HT.-units">Unidades de Altura
+                                        <label class="col-sm-3 col-form-label" for="initial_height">Altura
+                                            Inicial</label>
+                                        <label class="label-option" for="initial_height_units">Unidades de Altura
                                             Inicial</label>
                                         <div class="col-sm-9 mx-auto">
                                             <div class="input-group">
 
                                                 <!-- Initial Height Form-->
                                                 <div class="col-6">
-                                                    <input class="form-control" id="initial-HT."
-                                                           min="0"
+                                                    <input class="form-control" id="initial_height" min="0"
+                                                           onchange="checkValidInputs(this.id, this.value)"
                                                            placeholder="Ingrese la altura inicial"
-                                                           required
-                                                           step="0.01"
-                                                           type="number"
-                                                           value="0">
+                                                           required step="0.01" type="number" value="0">
+
                                                     <div class="invalid-tooltip">
                                                         Por favor ingrese un valor numérico positivo.
                                                     </div>
@@ -241,7 +246,7 @@
 
                                                 <!-- Initial Height Units Form -->
                                                 <div class="col-6">
-                                                    <select class="form-select" id="initial-HT.-units">
+                                                    <select class="form-select" id="initial_height_units">
                                                         <option value="meter">Metro</option>
                                                         <option value="kilometer">Kilometro</option>
                                                         <option value="feet">Pies</option>
@@ -256,19 +261,16 @@
                                     <!-- Gravity and Units Form -->
                                     <div class="form-group row align-items-center mt-1">
                                         <label class="col-sm-3 col-form-label" for="gravity"> Gravedad </label>
-                                        <label class="label_option" for="gravity-units">Unidades de Gravedad</label>
+                                        <label class="label-option" for="gravity_units">Unidades de Gravedad</label>
                                         <div class="col-sm-9 mx-auto">
                                             <div class="input-group">
 
                                                 <!-- Gravity Form -->
                                                 <div class="col-6">
-                                                    <input class="form-control" id="gravity"
-                                                           min="0"
-                                                           placeholder="Ingrese la gravedad"
-                                                           required
-                                                           step="0.01"
-                                                           type="number"
-                                                           value="9.81">
+                                                    <input class="form-control" id="gravity" max="20" min="0"
+                                                           onchange="checkValidInputs(this.id, this.value)"
+                                                           placeholder="Ingrese la gravedad" required
+                                                           step="0.01" type="number" value="9.81">
 
                                                     <div class="invalid-tooltip">
                                                         Por favor ingrese un valor numérico positivo.
@@ -277,7 +279,7 @@
 
                                                 <!-- Gravity Units Form -->
                                                 <div class="col-6">
-                                                    <select class="form-select" id="gravity-units">
+                                                    <select class="form-select" id="gravity_units">
                                                         <option value="m/s2">m/s2</option>
                                                         <option value="gal">Gal</option>
                                                         <option value="ft/s2">ft/s2</option>
@@ -299,15 +301,16 @@
 
                                         <!-- Calculate Button -->
                                         <div class="col-auto">
-                                            <button class="btn btn-primary btn-lg" id="calculate-button"
-                                                    onclick="calculateProjectilEmotion()"
+                                            <button class="btn btn-primary btn-lg" id="calculate_button"
+                                                    onclick="calculateProjectileMotion()"
                                                     type="submit">Calcular
                                             </button>
                                         </div>
 
                                         <!-- Reset Button -->
                                         <div class="col-auto">
-                                            <button class="btn btn-primary btn-lg" id="reset-button" onclick="reset()"
+                                            <button class="btn btn-primary btn-lg" id="reset_button"
+                                                    onclick="reset();clearCanvas()"
                                                     type="button">Resetear
                                             </button>
                                         </div>
@@ -322,21 +325,21 @@
 
                                     <!-- Distance and Units Form -->
                                     <div class="form-group row align-items-center">
-                                        <label class="col-sm-3 col-form-label" for="DIST.">Distancia</label>
-                                        <label class="label_option" for="DIST.-units">Unidades de
+                                        <label class="col-sm-3 col-form-label" for="distance">Distancia</label>
+                                        <label class="label-option" for="distance_units">Unidades de
                                             Distancia</label>
                                         <div class="col-sm-9 mt-1 mx-auto">
                                             <div class="input-group">
 
                                                 <!-- Distance Form -->
                                                 <div class="col-6">
-                                                    <input class="form-control" disabled id="DIST." type="number"
+                                                    <input class="form-control" disabled id="distance" type="number"
                                                            value="0">
                                                 </div>
 
                                                 <!-- Distance Units Form -->
                                                 <div class="col-6">
-                                                    <select class="form-select" id="DIST.-units">
+                                                    <select class="form-select" id="distance_units">
                                                         <option value="meter">Metro</option>
                                                         <option value="kilometer">Kilometro</option>
                                                         <option value="feet">Pies</option>
@@ -350,23 +353,23 @@
 
                                     <!-- Maximum Height and Units Form -->
                                     <div class="form-group row align-items-center">
-                                        <label class="col-sm-3 col-form-label" for="maximum-HT.">Altura
+                                        <label class="col-sm-3 col-form-label" for="maximum_height">Altura
                                             máxima</label>
-                                        <label class="label_option" for="maximum-HT.-units">Unidades de Altura
+                                        <label class="label-option" for="maximum_height_units">Unidades de Altura
                                             Máxima</label>
                                         <div class="col-sm-9 mt-1 mx-auto">
                                             <div class="input-group">
 
                                                 <!-- Maximum Height Form -->
                                                 <div class="col-6">
-                                                    <input class="form-control" disabled id="maximum-HT."
+                                                    <input class="form-control" disabled id="maximum_height"
                                                            type="number"
                                                            value="0">
                                                 </div>
 
                                                 <!-- Maximum Height Units Form -->
                                                 <div class="col-6">
-                                                    <select class="form-select" id="maximum-HT.-units">
+                                                    <select class="form-select" id="maximum_height_units">
                                                         <option value="meter">Metro</option>
                                                         <option value="kilometer">Kilometro</option>
                                                         <option value="feet">Pies</option>
@@ -381,7 +384,7 @@
                                     <!-- Time and Units Form -->
                                     <div class="form-group row align-items-center">
                                         <label class="col-sm-3 col-form-label" for="time">Tiempo</label>
-                                        <label class="label_option" for="time-units">Unidades de Tiempo</label>
+                                        <label class="label-option" for="time_units">Unidades de Tiempo</label>
                                         <div class="col-sm-9 mt-1 mx-auto">
                                             <div class="input-group">
 
@@ -393,7 +396,7 @@
 
                                                 <!-- Time Units Form -->
                                                 <div class="col-6">
-                                                    <select class="form-select" id="time-units">
+                                                    <select class="form-select" id="time_units">
                                                         <option value="seconds">Segundo</option>
                                                         <option value="minutes">Minuto</option>
                                                         <option value="hour">Hora</option>
@@ -412,7 +415,7 @@
                         <h4 class="d-flex justify-content-center mt-3">
                             <span class="title-canvas">Gráfico</span>
                         </h4>
-                        <canvas class="my-canvas" height="100" id="my-canvas" width="200">
+                        <canvas class="my-canvas" height="100px" id="my_canvas" width="200px">
                             Tu navegador no soporta el tag de HTML5 canvas.
                         </canvas>
                     </div>

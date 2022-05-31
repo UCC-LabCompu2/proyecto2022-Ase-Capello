@@ -120,7 +120,7 @@ article {
     margin-top: 1rem;
 }
 
-.label_option {
+.label-option {
     display: none;
 }
 
@@ -144,11 +144,11 @@ select option {
     position: static;
 }
 
-#calculate-button {
+#calculate_button {
     background-image: linear-gradient(to right, #1A2980 0%, #26D0CE 51%, #1A2980 100%);
 }
 
-#calculate-button {
+#calculate_button {
     text-align: center;
     text-transform: uppercase;
     transition: 0.5s;
@@ -158,18 +158,18 @@ select option {
     border-radius: 10px;
 }
 
-#calculate-button:hover {
+#calculate_button:hover {
     background-position: right center;
     color: #fff;
     text-decoration: none;
     font-size: 25px;
 }
 
-#reset-button {
+#reset_button {
     background-image: linear-gradient(to right, #C04848 0%, #480048 51%, #C04848 100%);
 }
 
-#reset-button {
+#reset_button {
     text-align: center;
     text-transform: uppercase;
     transition: 0.5s;
@@ -179,7 +179,7 @@ select option {
     border-radius: 10px;
 }
 
-#reset-button:hover {
+#reset_button:hover {
     background-position: right center; /* change the direction of the change here */
     color: #fff;
     text-decoration: none;
@@ -197,7 +197,7 @@ select option {
     background: #ECE9E6; /* fallback for old browsers */
 }
 
-.imgcontainer {
+.image-container {
     text-align: center;
     margin-left: 1.8rem;
     margin-right: 1.8rem;
@@ -208,7 +208,7 @@ body img {
     height: auto;
 }
 
-.cImportantBox {
+.container-important-box {
     width: auto;
     padding: 1rem;
     margin-top: 3rem;
@@ -224,7 +224,7 @@ body img {
     clear: both;
 }
 
-.cAuxBox {
+.container-aux-box {
     width: auto;
     padding: 1rem;
     margin: 3rem 1.8rem;
