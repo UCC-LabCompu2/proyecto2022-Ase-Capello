@@ -124,29 +124,29 @@ function checkValidInputs(id, valor) {
 
     /* Checking if the value of the input field is greater than 100. If it is, it will alert the user that the value is
     invalid, and it will reset the value of the input field to 0. */
-    if (id === "initial_speed" && valor > 100) {
-        alert("Ingrese un valor entre 0 y 100 en el campo " + id);
+    if (id === "initial_speed" && valor > 100 && valor === 0) {
+        alert("Ingrese un valormayor a 0 y hasta 90 en el campo " + id);
         document.getElementById("initial_speed").value = "0";
     }
 
     /* Checking if the value of the input field is greater than 90. If it is, it will alert the user that the value is
     invalid, and it will reset the value of the input field to 0. */
-    if (id === "angle" && valor > 90) {
-        alert("Ingrese un valor entre 0 y 90 en el campo " + id);
+    if (id === "angle" && valor > 90 && valor === 0) {
+        alert("Ingrese un valor mayor a 0 y hasta 90 en el campo " + id);
         document.getElementById("angle").value = "0";
     }
 
     /* Checking if the value of the input field is greater than 30. If it is, it will alert the user that the value is
     invalid, and it will reset the value of the input field to 0. */
-    if (id === "initial_height" && valor > 30) {
-        alert("Ingrese un valor entre 0 y 30 en el campo " + id);
+    if (id === "initial_height" && valor > 30 && valor === 0) {
+        alert("Ingrese un valor mayor a 0 y hasta 30 en el campo " + id);
         document.getElementById("initial_height").value = "0";
     }
 
     /* Checking if the value of the input field is greater than 20. If it is, it will alert the user that the value is
     invalid, and it will reset the value of the input field to 9,81. */
-    if (id === "gravity" && valor > 20) {
-        alert("Ingrese un valor entre 0 y 20 en el campo " + id);
+    if (id === "gravity" && valor > 20 && valor === 0) {
+        alert("Ingrese un valor mayor a 0 y hasta  20 en el campo " + id);
         document.getElementById("gravity").value = "9.81";
     }
 }
