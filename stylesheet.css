@@ -8,7 +8,7 @@
     color: #F3F6F6;
 }
 
-/* Body: Configuration of the background color of the page. */
+/* Setting the background image of the page. */
 body {
     background-image: url("images-videos/background.jpg");
     background-position: center center;
@@ -19,6 +19,7 @@ body {
     background-blend-mode: multiply;
 }
 
+/* Setting the position of the video to the top left corner of the page. */
 .video-wrapper {
     position: absolute;
     top: 0;
@@ -26,6 +27,7 @@ body {
     width: 100%;
 }
 
+/* Setting the position of the video to the top left corner of the page. */
 #background-video {
     position: absolute;
     top: 0;
@@ -38,6 +40,7 @@ body {
     background: #111111;
 }
 
+/* Setting the background color of the page to a dark grey. */
 .overlay {
     position: absolute;
     top: 0;
@@ -49,12 +52,14 @@ body {
     z-index: -1;
 }
 
+/* Setting the height and width of the icon to 35px and floating it to the left. */
 #icon {
     height: 35px;
     width: 35px;
     float: left;
 }
 
+/* Setting the background image of the home icon to the home.png image. */
 #home {
     background-image: url('images-videos/home.png');
     height: 24px;
@@ -64,10 +69,12 @@ body {
     background-size: cover;
 }
 
+/* Changing the background image of the home icon to the home.gif image when the mouse hovers over it. */
 #home:hover {
     background-image: url('images-videos/home.gif');
 }
 
+/* Setting the background image of the book icon to the book.png image. */
 #book {
     background-image: url('images-videos/book.png');
     height: 24px;
@@ -77,10 +84,12 @@ body {
     background-size: cover;
 }
 
+/* Changing the background image of the book icon to the book.gif image when the mouse hovers over it. */
 #book:hover {
     background-image: url('images-videos/book.gif');
 }
 
+/* Setting the background image of the notebook icon to the notebook.png image. */
 #notebook {
     background-image: url('images-videos/notebook.png');
     height: 24px;
@@ -90,64 +99,82 @@ body {
     background-size: cover;
 }
 
+/* Changing the background image of the notebook icon to the notebook.gif image when the mouse hovers over it. */
 #notebook:hover {
     background-image: url('images-videos/notebook.gif');
 }
 
+/* This is a media query. It is saying that if the screen is at least 428px wide, then the header should have a
+padding-bottom of 4rem. */
 @media (min-width: 428px) {
     header {
         padding-bottom: 4rem;
     }
 }
 
+/* This is a media query. It is saying that if the screen is between 362px and 427px wide, then the header should have a
+padding-bottom of 6rem. */
 @media (min-width: 362px) and (max-width: 427px) {
     header {
         padding-bottom: 6rem;
     }
 }
 
+/* This is a media query. It is saying that if the screen is less than or equal to 361px wide, then the header should have
+a padding-bottom of 8rem. */
 @media (max-width: 361px) {
     header {
         padding-bottom: 8rem;
     }
 }
 
+/* Setting the background color of the nav element to a dark grey. */
 nav {
     background: #211D25;
 }
 
+/* Setting the margin-top of the article element to 1rem. */
 article {
     margin-top: 1rem;
 }
 
+/* Hiding the label of the select element. */
 .label-option {
     display: none;
 }
 
+/* Setting the background color of the form control and form select elements to a light grey. */
 .form-control, .form-select {
     background-color: #F7F7F7;
 }
 
+/* Setting the color of the options in the select element to a dark grey. */
 select option {
     color: #212529;
 }
 
+/* Setting the color of the valid feedback to a light green. */
 .valid-feedback {
     color: #B2FF00;
 }
 
+/* Setting the color of the invalid feedback to a light red. */
 .invalid-feedback {
     color: #FCA4A7;
 }
 
+/* Making the invalid tooltip not be positioned relative to the input. */
 .invalid-tooltip {
     position: static;
 }
 
+/* Setting the background image of the calculate button to a linear gradient. */
 #calculate_button {
     background-image: linear-gradient(to right, #1A2980 0%, #26D0CE 51%, #1A2980 100%);
 }
 
+/* Setting the text-align to center, the text-transform to uppercase, the transition to 0.5s, the background-size to 200%
+auto, the color to #ffffff, the box-shadow to 0 0 20px #eee, and the border-radius to 10px. */
 #calculate_button {
     text-align: center;
     text-transform: uppercase;
@@ -158,6 +185,7 @@ select option {
     border-radius: 10px;
 }
 
+/* This is changing the background position of the button when the mouse hovers over it. */
 #calculate_button:hover {
     background-position: right center;
     color: #fff;
@@ -165,10 +193,13 @@ select option {
     font-size: 25px;
 }
 
+/* Setting the background image of the reset button to a linear gradient. */
 #reset_button {
     background-image: linear-gradient(to right, #C04848 0%, #480048 51%, #C04848 100%);
 }
 
+/* This is setting the text-align to center, the text-transform to uppercase, the transition to 0.5s, the background-size
+to 200% auto, the color to #ffffff, the box-shadow to 0 0 20px #eee, and the border-radius to 10px. */
 #reset_button {
     text-align: center;
     text-transform: uppercase;
@@ -179,6 +210,7 @@ select option {
     border-radius: 10px;
 }
 
+/* This is changing the background position of the button when the mouse hovers over it. */
 #reset_button:hover {
     background-position: right center; /* change the direction of the change here */
     color: #fff;
@@ -186,6 +218,9 @@ select option {
     line-height: normal;
     font-size: 25px;
 }
+
+/* This is setting the margin to 5px auto, the display to block, the border to 1px solid #000000, the width to 100%,
+the height to auto, the position to relative, and the background to #ECE9E6. */
 
 .my-canvas {
     margin: 5px auto;
@@ -197,17 +232,25 @@ select option {
     background: #ECE9E6; /* fallback for old browsers */
 }
 
+/* Centering the image container and giving it a margin of 1.8rem on the left and right. */
 .image-container {
     text-align: center;
     margin-left: 1.8rem;
     margin-right: 1.8rem;
 }
 
+/* Setting the max-width of the image to 100% and the height to auto. */
 body img {
     max-width: 100%;
     height: auto;
 }
 
+/* This is setting the width to auto, the padding to 1rem, the margin-top to 3rem, the margin-bottom to 3rem, the
+position to relative, the background-image to a linear gradient, the border-color to #ff1919, the border-left-width to
+3px,
+the border-right-width to 3px, the border-top-width to 0, the border-bottom-width to 0, the border-style to solid, and
+the
+clear to both. */
 .container-important-box {
     width: auto;
     padding: 1rem;
@@ -224,6 +267,9 @@ body img {
     clear: both;
 }
 
+/* This is setting the width to auto, the padding to 1rem, the margin to 3rem 1.8rem, the position to relative, the
+background-image to a linear gradient, the border-color to #ff1919, the border-left-width to 3px, the border-right-width
+to 3px, the border-top-width to 0, the border-bottom-width to 0, the border-style to solid, and the clear to both. */
 .container-aux-box {
     width: auto;
     padding: 1rem;
@@ -239,12 +285,16 @@ body img {
     clear: both;
 }
 
+/* This is setting the color of the text to a light yellow, the font family to Shadows Into Light, and the font size
+to 1.2rem. */
 .alternative-font {
     color: #FFFF4E;
     font-family: "Shadows Into Light", cursive;
     font-size: 1.2rem;
 }
 
+/* This is setting the display to block, the text-align to center, the margin to 1em 0, the font-size to 113.1%, the
+position to relative, the width to 100%, and the overflow to auto. */
 .equations {
     display: block;
     text-align: center;
@@ -255,25 +305,32 @@ body img {
     overflow: auto;
 }
 
+/* This is setting the color of the text to a light purple and removing the underline from the text. */
 div a, p a {
     color: #B0A9FF;
     text-decoration: none;
 }
 
+/* This is changing the color of the text to a light green and adding an underline to the text when the mouse hovers over
+it. */
 div a:hover, p a:hover {
     color: #85FFCF;
     text-decoration: underline;
 }
 
+/* Setting the background color of the footer to a dark grey. */
 footer {
     background-color: #231A1A;
 }
 
+/* This is changing the color of the text to a light green and adding an underline to the text when the mouse hovers over
+it. */
 .btn-outline-light:hover {
     color: #26D0CE;
     background-color: #696869;
 }
 
+/* This is setting the background image of the github icon to the github.png image. */
 .github {
     background-image: url('images-videos/github.png');
     height: 24px;
@@ -283,10 +340,12 @@ footer {
     background-size: cover;
 }
 
+/* This is changing the background image of the github icon to the github.gif image when the mouse hovers over it. */
 .github:hover {
     background-image: url('images-videos/github.gif');
 }
 
+/* Setting the background color of the copyright element to a dark grey. */
 footer #copyright {
     background: #130F0F;
 }
