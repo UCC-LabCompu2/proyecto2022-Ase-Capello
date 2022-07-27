@@ -133,6 +133,12 @@
                         que se efectúa por la gravedad y el resultado de
                         este movimiento es una parábola.</p>
                 </div>
+                <div class="container-fluid text-left">
+
+                    <p class="lead">Para calcular el tiro parabólico debe ingresar los valores en los campos de datos,
+                        luego seleccione a la derecha la unidad en la que se encuentra el valor. Si desea convertir a
+                        otra unidad, seleccione en el ultimo recuadro la unidad deseada.</p>
+                </div>
             </article>
         </section>
 
@@ -153,6 +159,19 @@
                                 <!-- Inputs Form -->
                                 <div class="container-fluid">
 
+                                    <div class="row justify-content-end">
+                                        <div class="col-3">
+                                            <div class="container-fluid text-center">
+                                                <p>Unidad Ingresada</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-3">
+                                            <div class="container-fluid text-center">
+                                                <p>Unidad Convertida</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
                                     <!-- Initial Velocity and Units Form -->
                                     <div class="form-group row align-items-center mt-1">
                                         <label class="col-sm-3 col-form-label" for="initial_speed">Velocidad
@@ -163,7 +182,6 @@
                                             Inicial convertida</label>
                                         <div class="col-sm-9 mx-auto">
                                             <div class="input-group">
-
                                                 <!-- Initial Speed Form -->
                                                 <div class="col-4">
                                                     <input class="form-control" id="initial_speed" max="100" min="0"
@@ -396,7 +414,7 @@
 
                                                 <!-- Distance Units From Form -->
                                                 <div class="col-4">
-                                                    <select class="form-select" id="distance_units_from">
+                                                    <select class="form-select" disabled id="distance_units_from">
                                                         <option value="meter">Metro</option>
                                                         <option value="kilometer">Kilometro</option>
                                                         <option value="feet">Pies</option>
@@ -440,7 +458,7 @@
 
                                                 <!-- Maximum Height Units From Form -->
                                                 <div class="col-4">
-                                                    <select class="form-select" id="maximum_height_units_from">
+                                                    <select class="form-select" disabled id="maximum_height_units_from">
                                                         <option value="meter">Metro</option>
                                                         <option value="kilometer">Kilometro</option>
                                                         <option value="feet">Pies</option>
@@ -482,7 +500,7 @@
 
                                                 <!-- Time Units From Form -->
                                                 <div class="col-4">
-                                                    <select class="form-select" id="time_units_from">
+                                                    <select class="form-select" disabled id="time_units_from">
                                                         <option value="seconds">Segundo</option>
                                                         <option value="minutes">Minuto</option>
                                                         <option value="hour">Hora</option>

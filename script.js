@@ -873,10 +873,41 @@ function calculateProjectileMotion() {
     location.href = '#my_canvas';
 
     /* Getting the values of the input fields. */
-    initialVelocity = document.getElementById("initial_speed").value;
-    angle = document.getElementById("angle").value;
-    gravity = document.getElementById("gravity").value;
-    initialHeight = document.getElementById("initial_height").value;
+    if (document.getElementById("initial_speed_units_from").value === "m/s") {
+        initialVelocity = document.getElementById("initial_speed").value;
+    } else if (document.getElementById("initial_speed_units_from").value === "km/h") {
+        initialVelocity = (document.getElementById("initial_speed").value * (1000 / 3600)).toFixed(2);
+    } else if (document.getElementById("initial_speed_units_from").value === "km/s") {
+        initialVelocity = (document.getElementById("initial_speed").value * 1000).toFixed(2);
+    } else if (document.getElementById("initial_speed_units_from").value === "ft/s") {
+        initialVelocity = (document.getElementById("initial_speed").value * 0.3048).toFixed(2);
+    } else if (document.getElementById("initial_speed_units_from").value === "mph") {
+        initialVelocity = (document.getElementById("initial_speed").value * 0.44704).toFixed(2);
+    } else if (document.getElementById("initial_speed_units_from").value === "mps") {
+        initialVelocity = (document.getElementById("initial_speed").value * 1609.344).toFixed(2);
+    }
+    if (document.getElementById("angle_units_from").value === "degrees") {
+        angle = document.getElementById("angle").value;
+    } else if (document.getElementById("angle_units_from").value === "rad") {
+        angle = (document.getElementById("angle").value * (180 / Math.PI)).toFixed(2);
+    }
+    if (document.getElementById("initial_height_units_from").value === "meter") {
+        initialHeight = document.getElementById("initial_height").value;
+    }
+    if (document.getElementById("gravity_units_from").value === "m/s²") {
+        gravity = document.getElementById("gravity").value;
+    } else if (document.getElementById("gravity_units_from").value === "gal") {
+        gravity = (document.getElementById("gravity").value * 0.01).toFixed(2);
+    } else if (document.getElementById("gravity_units_from").value === "ft/s²") {
+        gravity = (document.getElementById("gravity").value * 0.3048).toFixed(2);
+    } else if (document.getElementById("gravity_units_from").value === "km/s²") {
+        gravity = (document.getElementById("gravity").value * 1000).toFixed(2);
+    } else if (document.getElementById("gravity_units_from").value === "in/s²") {
+        gravity = (document.getElementById("gravity").value * 0.0254).toFixed(2);
+    } else if (document.getElementById("gravity_units_from").value === "yd/s²") {
+        gravity = (document.getElementById("gravity").value * 0.9144).toFixed(2);
+    }
+
 
     /* Calculating the x and y components of the initial velocity. */
     const vx = initialVelocity * Math.cos(angle * Math.PI / 180);
