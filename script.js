@@ -858,7 +858,6 @@ function convertUnits(id, unidad) {
     }
 }
 
-
 /**
  * The calculateProjectileMotion function calculates the time, distance and maximum height of a projectile with
  * initial velocity,angle, initial Height and gravity and then draws a graph of the projectile's trajectory on a canvas.
@@ -910,6 +909,7 @@ function calculateProjectileMotion() {
     const margX = 50;
     const margY = 30;
     let t = 0;
+    let nIntervId;
 
     /* Drawing a red dot on the canvas. */
     ctx.beginPath();
@@ -917,16 +917,18 @@ function calculateProjectileMotion() {
     ctx.arc(margX + vx * time, maximumCanvasHeight - margY - (initialHeight + (vy * time - 0.5 * 9.8 * (Math.pow(time, 2)))) + maximumCanvasHeight - margY, 5, 0, 2 * Math.PI);
     ctx.closePath();
     ctx.fill();
-    if (t < time) {
-        setInterval(() => {
-            t += 0.01;
-            ctx.beginPath();
-            ctx.fillStyle = "#ff1919";
-            ctx.arc(margX + vx * t, maximumCanvasHeight - margY - initialHeight - (vy * t - 0.5 * 9.8 * (Math.pow(t, 2))), 1, 0, 2 * Math.PI);
-            ctx.closePath();
-            ctx.fill();
-        }, 5);
-    }
+    nintervId = setInterval(() => {
+        t += 0.01;
+        ctx.beginPath();
+        ctx.fillStyle = "#ff1919";
+        ctx.arc(margX + vx * t, maximumCanvasHeight - margY - initialHeight - (vy * t - 0.5 * 9.8 * (Math.pow(t, 2))), 1, 0, 2 * Math.PI);
+        ctx.closePath();
+        ctx.fill();
+        if (t >= time) {
+            clearInterval(nintervId);
+        }
+    }, 5);
+    nIntervId = null;
 }
 
 /**
